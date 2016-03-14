@@ -1,17 +1,31 @@
 <!doctype html>
 <html>
-	<head>
-		<title>MyTweets</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
-	</head>
-	<body>
-		<!--format html below-->
-		<h1>Twiter Clone Edu's From</h1>
 
-		<script src="components/jquery/dist/jquery.min.js"></script>
-		<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!--linking code from main js-->
-		<script src="js/main.js"></script>
-	</body>
+<head>
+    <title>MyTweets</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--format html below-->
+    <h1>Twiter Clone Edu's From</h1>
+
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--linking code from main js-->
+    <script src="js/main.js"></script>
+    <div class="center">
+
+        <form id="blogForm" method="post" action="/messages">
+            <textarea class="center" rows="4" cols="50" name="messageContent" id="blogBody">
+            </textarea>
+            <input type="submit" value="Send Message" />
+
+        </form>
+    </div>
+
+
+</body>
+
 </html>

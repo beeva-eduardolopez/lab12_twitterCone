@@ -1,0 +1,9 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+.center{
+     justify-content: center; 
+     text-align: center;
+}
