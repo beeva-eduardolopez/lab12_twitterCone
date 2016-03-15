@@ -2,8 +2,50 @@ h1{
     color: blue;
     text-align: center;
 }
-
+.color{
+    background-color: #E6E6FA;
+}
 .center{
      justify-content: center; 
      text-align: center;
+      width: auto;
+}
+
+.input-button {
+  width: 70%;
+  height: 70%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: black;
+  margin-top: 15px;
+}
+
+.fill {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 65%;
+  background-color: #81BEF7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-color: black grey;
+}
+
+.messages {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 85%;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-color: black grey;
 }

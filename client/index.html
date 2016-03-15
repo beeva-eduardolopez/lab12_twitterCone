@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="color">
     <!--format html below-->
     <h1>Twiter Clone Edu's From</h1>
 
@@ -16,15 +16,16 @@
     <!--linking code from main js-->
     <script src="js/main.js"></script>
     <div class="center">
-
-        <form id="blogForm" method="post" action="/messages">
-            <textarea class="center" rows="4" cols="50" name="messageContent" id="blogBody">
+        <!--<form class="fill" id="messageForm" method="post" action="/messages">-->
+         <form class="fill" id="messageForm" method="post" action="/">
+            <textarea rows="4" cols="100" name="messageContent" id="messageBody" placeholder="Message...">
             </textarea>
-            <input type="submit" value="Send Message" />
-
+            <input class="input-button" type="submit" value="Send Message" />
         </form>
     </div>
 
+    <h2 class="center">Messages</h2>
+    <div class="messages" id="message-container"></div>
 
 </body>
 
