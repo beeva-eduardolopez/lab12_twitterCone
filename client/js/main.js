@@ -5,11 +5,17 @@ $(document).ready(function() {
         $("#messageForm").submit(function(event) {
             event.preventDefault();
             var $form = $(this),
-                message = $form.find("textarea[name='messageContent']").val(),
+                message = $form.find("messageContent").val(),
                 url = $form.attr("action");
 
+            var myObject = new Object();
+            myObject.text = message;
+            myObject.userName = 'edu';
+
+            var myString = JSON.stringify(myObject);
+
             // Send the data using post
-            var posting = $.post(url, { s: message });
+            var posting = $.post(url, { s: myObject });
 
             // Put the results in a div
             posting.done(function(data) {
@@ -24,7 +30,15 @@ $(document).ready(function() {
     }
 
     function getData() {
-        /*This function should make a get request from 'database', parse the data and prepend each to the page*/
+        $.get("/messages", function(data) {
+            var temp = new Array();
+            // this will return an array with strings "1", "2", etc.
+            temp = data.split('\n');
+            temp.forEach(function(element) {
+                $("#message-container").append(element)
+            }, this);
+
+        });
     }
 
     /*Calls function once page loaded to display tweets to page*/
