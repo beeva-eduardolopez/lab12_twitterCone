@@ -7,8 +7,7 @@ $(document).ready(function() {
         myObject.text = message;
         myObject.userName = 'edu';
         var stringJSON = JSON.stringify(myObject);
-        var json = JSON.parse(myObject);
-        $.post("/messages", {json }, "json");
+        $.post("/messages", { myObject });
 
     })
 
