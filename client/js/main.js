@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
     $('#buttonMessage').on('click', function postData() {
-        //e.preventDefault();
         var message = $('textarea#messageBody').val();
         var myObject = new Object();
         myObject.text = message;
         myObject.userName = 'edu';
         var stringJSON = JSON.stringify(myObject);
-        $.post("/messages", { myObject });
+        var json = JSON.parse(stringJSON);
+        $.post("/messages", stringJSON , "json");
 
     })
 
