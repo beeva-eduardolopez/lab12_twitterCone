@@ -6,15 +6,3 @@
 {"text":"Ennui disrupt Banksy hella, American Apparel artisan vinyl VHS chillwave lomo retro kale chips iPhone literally pork belly.","userName":"bot"}
 {"text":"8-bit High Life cred, try-hard meh messenger bag gentrify.","userName":"bot"}
 {"text":"8-bit High Life cred!","userName":"bot"}
-
-messageContent=++++++++++++dd
-messageContent=++++++++++++prueba+JSON
-messageContent=++++++++++++fgfg
-messageContent=++++++++++++ff
-messageContent=++++++++++++fffdvfvf
-messageContent=++++++++++++fffdvfvf
-messageContent=+dvfdvfvfvfvfvfvfvfvfvfvfvf
-messageContent=fvfv
-messageContent=fvfv
-messageContent=++++++++++++
-messageContent=++++++++++++

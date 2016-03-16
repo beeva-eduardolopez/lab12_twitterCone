@@ -35,7 +35,14 @@ $(document).ready(function() {
             // this will return an array with strings "1", "2", etc.
             temp = data.split('\n');
             temp.forEach(function(element) {
-                $("#message-container").append(element)
+                var obj = JSON.parse(element);
+                var ul = document.getElementById("message-list");
+                var li = document.createElement("li");
+                var children = ul.children.length + 1
+                li.setAttribute("id", "element" + children)
+                li.appendChild(document.createTextNode(obj.text));
+                ul.appendChild(li)
+                //$("#message-container").append(obj.text + '\n');
             }, this);
 
         });
